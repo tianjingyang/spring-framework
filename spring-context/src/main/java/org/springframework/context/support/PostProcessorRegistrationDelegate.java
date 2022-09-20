@@ -63,7 +63,7 @@ final class PostProcessorRegistrationDelegate {
         // 将已经执行过的BFPP存储在processedBeans中，防止重复执行
         Set<String> processedBeans = new HashSet<>();
 
-        // 判断beanfactory是否是BeanDefinitionRegistry类型，此处是DefaultListableBeanFactory,实现了BeanDefinitionRegistry接口，所以为true
+        // 判断beanFactory是否是BeanDefinitionRegistry类型，此处是DefaultListableBeanFactory,实现了BeanDefinitionRegistry接口，所以为true
         if (beanFactory instanceof BeanDefinitionRegistry) {
             // 类型转换
             BeanDefinitionRegistry registry = (BeanDefinitionRegistry) beanFactory;
@@ -387,7 +387,7 @@ final class PostProcessorRegistrationDelegate {
         }
         if (comparatorToUse == null) {
             //OrderComparator.INSTANCE:有序对象的比较实现，按顺序值升序或优先级降序排序,优先级由上往下：
-            // 	1.PriorityOrderd对象
+            // 	1.PriorityOrdered对象
             // 	2.一些Order对象
             // 	3.无顺序对象
             comparatorToUse = OrderComparator.INSTANCE;
