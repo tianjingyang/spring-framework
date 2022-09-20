@@ -666,7 +666,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		BeanWrapper instanceWrapper = null;
 		// 获取factoryBean实例缓存
 		if (mbd.isSingleton()) {
-			// 如果是单例对象，从factorybean实例缓存中移除当前bean定义信息
+			// 如果是单例对象，从factoryBean实例缓存中移除当前bean定义信息
 			instanceWrapper = this.factoryBeanInstanceCache.remove(beanName);
 		}
 		// 没有就创建实例

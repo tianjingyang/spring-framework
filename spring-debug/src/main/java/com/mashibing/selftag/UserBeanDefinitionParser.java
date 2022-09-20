@@ -21,7 +21,7 @@ public class UserBeanDefinitionParser  extends AbstractSingleBeanDefinitionParse
        String password = element.getAttribute("password");
 
        if(StringUtils.hasText(userName)){
-           builder.addPropertyValue("username",userName);
+           builder.addPropertyValue("userName",userName);
        }
        if (StringUtils.hasText(email)){
            builder.addPropertyValue("email",email);

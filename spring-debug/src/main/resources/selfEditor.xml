@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="customer" class="com.mashibing.selfEditor.Customer">
-        <property name="name" value="zhangsan"></property>
-        <property name="address" value="河北省_邯郸市_武安市"></property>
+        <property name="name" value="zhangsan"/>
+        <property name="address" value="河北省_邯郸市_武安市"/>
     </bean>
 <!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
 <!--        <property name="propertyEditorRegistrars">-->

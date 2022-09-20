@@ -105,6 +105,10 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 	 * using it as the basis for expression compilation.
 	 * @param beanClassLoader the factory's bean class loader
 	 */
+	//类包含关系：
+	// bean表达式的处理类(StandardBeanExpressionResolver)
+	// -> spel表达式的解析类(SpelExpressionParser)
+	// -> 当前解析类对应的配置类(SpelParserConfiguration)
 	public StandardBeanExpressionResolver(@Nullable ClassLoader beanClassLoader) {
 		this.expressionParser = new SpelExpressionParser(new SpelParserConfiguration(null, beanClassLoader));
 	}
