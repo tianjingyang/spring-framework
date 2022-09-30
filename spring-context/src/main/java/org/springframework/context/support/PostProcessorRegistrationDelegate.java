@@ -184,8 +184,8 @@ final class PostProcessorRegistrationDelegate {
             invokeBeanFactoryPostProcessors(beanFactoryPostProcessors, beanFactory);
         }
 
-        // 到这里为止，入参beanFactoryPostProcessors和容器中的所有BeanDefinitionRegistryPostProcessor已经全部处理完毕，下面开始处理容器中
-        // 所有的BeanFactoryPostProcessor
+        // 到这里为止，入参beanFactoryPostProcessors和容器中的所有BeanDefinitionRegistryPostProcessor已经全部处理完毕，
+        // 下面开始处理容器中所有的BeanFactoryPostProcessor
         // 可能会包含一些实现类，只实现了BeanFactoryPostProcessor，并没有实现BeanDefinitionRegistryPostProcessor接口
 
         // Do not initialize FactoryBeans here: We need to leave all regular beans

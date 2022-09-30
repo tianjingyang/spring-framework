@@ -58,7 +58,7 @@ public class Test {
 //        A a = new A();
 //        B b = new B();
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Student bean = context.getBean(Student.class);
         context.close();
 
